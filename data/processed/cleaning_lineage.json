@@ -1,0 +1,16 @@
+{
+    "source_file": "diabetes.csv",
+    "source_records": 768,
+    "cleaning_date": "2026-01-06 23:49",
+    "transformations": [
+        "Replaced invalid zeros with NaN in 5 medical columns",
+        "Applied median imputation for missing values",
+        "Validated ranges against clinical standards"
+    ],
+    "quality_metrics": {
+        "records_processed": 768,
+        "records_preserved": 768,
+        "invalid_zeros_handled": 652
+    },
+    "output_file": "diabetes_cleaned.csv"
+}
