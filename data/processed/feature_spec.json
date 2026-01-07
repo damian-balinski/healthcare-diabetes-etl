@@ -1,0 +1,31 @@
+{
+  "input_path": "../data/processed/diabetes_cleaned.csv",
+  "output_path": "../data/processed/diabetes_fe.csv",
+  "target": "Outcome",
+  "numeric_features": [
+    "Pregnancies",
+    "Glucose",
+    "BloodPressure",
+    "SkinThickness",
+    "Insulin",
+    "BMI",
+    "DiabetesPedigreeFunction",
+    "Age",
+    "Glucose_BMI",
+    "Pregnancies_Age"
+  ],
+  "categorical_features": [
+    "AgeGroup",
+    "BMICategory"
+  ],
+  "engineered_features": [
+    "AgeGroup",
+    "BMICategory",
+    "Glucose_BMI",
+    "Pregnancies_Age"
+  ],
+  "notes": [
+    "AgeGroup and BMICategory are categorical and will be one-hot encoded later in the ML pipeline.",
+    "Numeric features will be standardized using StandardScaler (fit on train only)."
+  ]
+}
