@@ -1,0 +1,60 @@
+{
+  "generated_at_utc": "2026-01-08T23:21:04.894895+00:00",
+  "inputs": {
+    "processed_csv": "data\\processed\\diabetes_cleaned.csv",
+    "feature_spec": "data\\processed\\feature_spec.json"
+  },
+  "outputs": {
+    "parquet": "data\\cleaned\\diabetes_model_ready.parquet",
+    "csv_optional": "data\\cleaned\\diabetes_model_ready.csv"
+  },
+  "row_count": 768,
+  "column_count": 13,
+  "columns": [
+    "Pregnancies",
+    "Glucose",
+    "BloodPressure",
+    "SkinThickness",
+    "Insulin",
+    "BMI",
+    "DiabetesPedigreeFunction",
+    "Age",
+    "Outcome",
+    "AgeGroup",
+    "BMICategory",
+    "Glucose_BMI",
+    "Pregnancies_Age"
+  ],
+  "target": "Outcome",
+  "feature_spec_snapshot": {
+    "input_path": "../data/processed/diabetes_cleaned.csv",
+    "output_path": "../data/processed/diabetes_fe.csv",
+    "target": "Outcome",
+    "numeric_features": [
+      "Pregnancies",
+      "Glucose",
+      "BloodPressure",
+      "SkinThickness",
+      "Insulin",
+      "BMI",
+      "DiabetesPedigreeFunction",
+      "Age",
+      "Glucose_BMI",
+      "Pregnancies_Age"
+    ],
+    "categorical_features": [
+      "AgeGroup",
+      "BMICategory"
+    ],
+    "engineered_features": [
+      "AgeGroup",
+      "BMICategory",
+      "Glucose_BMI",
+      "Pregnancies_Age"
+    ],
+    "notes": [
+      "AgeGroup and BMICategory are categorical and will be one-hot encoded later in the ML pipeline.",
+      "Numeric features will be standardized using StandardScaler (fit on train only)."
+    ]
+  }
+}
