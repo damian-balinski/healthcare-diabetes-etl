@@ -1,0 +1,30 @@
+{
+  "trained_at": "2026-01-10 13:41:04",
+  "data_path": "../data/cleaned/diabetes_model_ready.parquet",
+  "feature_spec_path": "../data/processed/feature_spec.json",
+  "test_size": 0.2,
+  "random_state": 42,
+  "model_family": "LogisticRegression",
+  "baseline_params": {
+    "C": 1.0,
+    "class_weight": "balanced",
+    "dual": false,
+    "fit_intercept": true,
+    "intercept_scaling": 1,
+    "l1_ratio": 0.0,
+    "max_iter": 2000,
+    "n_jobs": null,
+    "penalty": "deprecated",
+    "random_state": 42,
+    "solver": "liblinear",
+    "tol": 0.0001,
+    "verbose": 0,
+    "warm_start": false
+  },
+  "grid_best_params": {
+    "model__C": 0.1,
+    "model__penalty": "l2"
+  },
+  "grid_scoring": "f1",
+  "cv_folds": 5
+}
