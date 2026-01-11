@@ -38,28 +38,28 @@ Focus is on data quality, reproducibility, and interpretable ML, designed as bot
 
 ## Project Structure 
 
-project-root/
-data/
-raw/ # original dataset
-processed/ # cleaned + feature-engineered data
-cleaned/ # model-ready dataset
-
-notebooks/
-01_exploration.ipynb
-02_cleaning.ipynb
-03_feature_engineering.ipynb
-05_model_training.ipynb
-06_evaluation.ipynb
-
-src/
-etl_pipeline.py # executable ETL pipeline
-
-results/
-metrics/ # CSV metrics & reports
-visualizations/ # confusion matrix, ROC curve
+- project-root/  
+data/  
+raw/ # original dataset  
+processed/ # cleaned + feature-engineered data  
+cleaned/ # model-ready dataset  
+  
+- notebooks/  
+01_exploration.ipynb  
+02_cleaning.ipynb  
+03_feature_engineering.ipynb  
+05_model_training.ipynb  
+06_evaluation.ipynb  
+  
+- src/  
+etl_pipeline.py # executable ETL pipeline  
+  
+- results/  
+metrics/ # CSV metrics & reports  
+visualizations/ # confusion matrix, ROC curve  
 models/ # serialized ML models & metadata
-
-README.md
+  
+README.md  
 requirements.txt
 
 ---
